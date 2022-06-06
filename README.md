@@ -1,1 +1,1 @@
-# template-for-bots
+# Шаблон для быстрого создания ботов VK, TG, Discord
