@@ -1,7 +1,8 @@
 {
   "name": "node-typescript-template",
   "main": "./dist/main.js",
-  "repository": "https://github.com/sm1rnovdev/typescript-template.git",
+  "description": "Шаблон с настройками для полноценной работы с TypeScript",
+  "repository": "https://github.com/sm1rnovdev/node-ts-template.git",
   "author": "Nikita Smirnov <sm1rnovdev@mail.ru>",
   "license": "MIT",
   "scripts": {
