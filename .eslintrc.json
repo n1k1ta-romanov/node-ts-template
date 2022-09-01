@@ -6,23 +6,20 @@
   },
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "ecmaVersion": 13,
+    "ecmaVersion": "latest",
     "project": ["./tsconfig.json"],
     "sourceType": "module"
   },
-  "plugins": ["@typescript-eslint", "prettier"],
+  "plugins": ["@typescript-eslint"],
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:@typescript-eslint/recommended-requiring-type-checking",
-    "prettier"
+    "plugin:@typescript-eslint/recommended-requiring-type-checking"
   ],
   "rules": {
     "indent": ["error", 2, { "SwitchCase": 1 }],
-    "linebreak-style": ["error", "windows"],
     "quotes": ["error", "single"],
     "semi": ["error", "always"],
-    "@typescript-eslint/explicit-function-return-type": "error",
     "@typescript-eslint/explicit-member-accessibility": [
       "error",
       {
@@ -45,9 +42,9 @@
       {
         "selector": "variable",
         "modifiers": ["const"],
-        "format": ["PascalCase", "camelCase"]
+        "format": ["PascalCase", "camelCase", "snake_case", "UPPER_CASE"]
       },
-      { "selector": "variableLike", "format": ["camelCase"] },
+      { "selector": "variableLike", "format": ["camelCase", "snake_case"] },
       {
         "selector": "memberLike",
         "modifiers": ["private"],
